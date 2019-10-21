@@ -7,14 +7,14 @@ import org.springframework.stereotype.Service;
 /**
  * Created by Daniel Šulik on 21-Oct-19
  * <p>
- * Class PrimaryGreetingService is used for .....
+ * Class PrimaryGermanGreetingService is used for .....
  */
 @Service
 @Primary
-@Profile({"en", "default"})
-public class PrimaryGreetingService implements GreetingService {
+@Profile("de")
+public class PrimaryGermanGreetingService implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hello - Primary Greeting service";
+        return "Primärer Grußdienst";
     }
 }
