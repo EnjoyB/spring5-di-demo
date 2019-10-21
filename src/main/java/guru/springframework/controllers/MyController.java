@@ -1,5 +1,6 @@
 package guru.springframework.controllers;
 
+import guru.springframework.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -10,10 +11,16 @@ import org.springframework.stereotype.Controller;
 @Controller // Using controller I'm saying that there is going to be created this type of bean
 public class MyController {
 
+    private GreetingService greetingService;
+
+    public MyController(GreetingService greetingService) {
+        this.greetingService = greetingService;
+    }
+
     public String sayHello(){
         System.out.println("Hello my friend!!!");
 
-        return "foo";
+        return greetingService.sayGreeting();
     }
 
 }
