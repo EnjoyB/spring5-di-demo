@@ -1,4 +1,4 @@
-package guru.springframework;
+package guru.springframework.others;
 
 import guru.springframework.controllers.ConstructorInjectedController;
 import guru.springframework.controllers.GetterInjectedController;
@@ -7,8 +7,13 @@ import guru.springframework.controllers.PropertyInjectedController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+// if these packages would in diffeenrt ones and not in same one
+// we would need to type separately ....
+// like {"guru.springframework.controllers","guru.springframework.others",....}
+@ComponentScan(basePackages = {"guru.springframework"})
 public class DiDemoApplication {
 
 	public static void main(String[] args) {
