@@ -1,0 +1,7 @@
+
+# This will be loaded in run...
+demo:
+  jms:
+    username: "JMS_BRoker_yaml"
+    password: "Yaml password#*"
+    dburl: "some url form yaml"
