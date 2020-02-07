@@ -1,0 +1,40 @@
+# This is a comment
+
+name: Daniel
+
+names: #Comment
+  - John
+  - Jerry
+  - Allen
+
+pound_sign: "#"
+
+book:
+    author: Joe Blackk
+    publisher: carry dough
+
+truth: yes
+
+another_truth: True
+
+more_truth: true
+
+false: no #No, false, False
+
+string_value: "This is it's quote."
+
+colon_string: "masfas is going for: carry"
+
+include_new_lines: |
+  There
+  are going
+  to
+  be new
+  lines
+
+ignore_new_lines: >
+  This is
+  going to
+  be on
+  one
+  line!
