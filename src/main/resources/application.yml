@@ -5,3 +5,10 @@ demo:
     username: "JMS_BRoker_yaml"
     password: "Yaml password#*"
     dburl: "some url form yaml"
+
+---
+spring:
+  profiles: de
+demo:
+  jms:
+    username: "Deutches Macht in JMS BRoker"
