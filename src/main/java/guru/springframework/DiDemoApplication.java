@@ -29,4 +29,5 @@ public class DiDemoApplication {
         System.out.println(String.format("Datasource FakeJMSBroker contains:: \n user: %s\npassword: %s\nurl: %s\n",
                                          dataSource2.getUsername(), dataSource2.getPassword(), dataSource2.getUrl()));
     }
+
 }
